@@ -9,11 +9,12 @@
 }
 
 .right-stripe div {
-    width: 32%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .right-stripe .bigger {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -22,11 +23,12 @@
 }
 
 .left-stripe div {
-    width: 49%;
-} 
+    width: 75%;
+    margin: 0 auto;
+}
 
 .left-stripe .bigger {
-    width: 52%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -35,7 +37,8 @@
 }
 
 .star div {
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .wave {
@@ -43,20 +46,21 @@
 }
 
 .wave div {
-    width: 15%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .right-stripe div,
 .left-stripe div,
 .star div,
 .wave div {
-    height: 100px;
+    height: 14em;
     margin: 10px auto;
 }
 
 .empty {
     width: 100%;
-    height: 15em;
+    height: 14em;
     margin: 0;
 }
 
@@ -75,28 +79,45 @@ div {
     background-color: white;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+    .right-stripe div {
+        width: 32%;
+    }
+
+    .right-stripe .bigger {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .left-stripe {
+        width: 100%;
+    }
+
+    .left-stripe div{
+        width: 49%;
+    }
+
+    .left-stripe .bigger {
+        width: 52%;
+        margin: 0 auto;
+    }
+
     .wave div {
-        width: 8%;
-        height: 100px;
-        margin: 10px 0;
+        width: 15%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    section {
+    .left-stripe {
         width: 100%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    } 
+    }
 
-    .right-stripe div,
-    .left-stripe div,
-    .right-stripe .bigger,
-    .left-stripe .bigger,
+    .left-stripe div {
+        width: 49%;
+    }
+
     .wave div {
-        width: 100%;
-        margin: 10px auto;
+        width: 8%;
+        margin: 10px 0;
     }
 }
